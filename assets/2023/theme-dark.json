@@ -9,6 +9,12 @@
     "folder": {
       "iconPath": "./icons/folder_dark.svg"
     },
+    "folder_vendor": {
+      "iconPath": "./icons/folderVendor_dark.svg"
+    },
+    "folder_test": {
+      "iconPath": "./icons/folderTest_dark.svg"
+    },
     "file_ignored": {
       "iconPath": "./icons/ignored_dark.svg"
     },
@@ -78,6 +84,9 @@
     "file_slim": {
       "iconPath": "./icons/slim_dark.svg"
     },
+    "file_sln": {
+      "iconPath": "./icons/solution_dark.svg"
+    },
     "file_yarn": {
       "iconPath": "./icons/yarn.svg"
     },
@@ -123,8 +132,14 @@
     "file_go": {
       "iconPath": "./icons/go_dark.svg"
     },
-    "file_gomodsum": {
-      "iconPath": "./icons/gomodsum.svg"
+    "file_gomod": {
+      "iconPath": "./icons/goMod_dark.svg"
+    },
+    "file_gosum": {
+      "iconPath": "./icons/goSum_dark.svg"
+    },
+    "file_gowork": {
+      "iconPath": "./icons/goWork_dark.svg"
     },
     "file_http": {
       "iconPath": "./icons/http_dark.svg"
@@ -207,8 +222,20 @@
     "file_clojure": {
       "iconPath": "./icons/clojure.svg"
     },
+    "file_ml": {
+      "iconPath": "./icons/ml.svg"
+    },
+    "file_mli": {
+      "iconPath": "./icons/mli.svg"
+    },
+    "file_dune": {
+      "iconPath": "./icons/dune.svg"
+    },
+    "file_opam": {
+      "iconPath": "./icons/opam.svg"
+    },
     "file_protobuf": {
-      "iconPath": "./icons/protobuf.svg"
+      "iconPath": "./icons/protoFile_dark.svg"
     },
     "file_hcl": {
       "iconPath": "./icons/hcl_dark.svg"
@@ -236,12 +263,27 @@
     },
     "file_graphql": {
       "iconPath": "./icons/graphql.svg"
+    },
+    "file_buildprops": {
+      "iconPath": "./icons/projectProperties_dark.svg"
     }
   },
   "file": "file_text",
   "folder": "folder",
-  "folderNames": {},
+  "folderNames": {
+    "vendor": "folder_vendor",
+    "test": "folder_test",
+    "tests": "folder_test",
+    "__test__": "folder_test",
+    "__tests__": "folder_test",
+    "__fixtures__": "folder_test",
+    "__snapshots__": "folder_test",
+    "spec": "folder_test",
+    "specs": "folder_test"
+  },
   "fileNames": {
+    "dune": "file_dune",
+    "dune-projecT": "file_dune",
     ".gitignore": "file_gitignore",
     ".gitattributes": "file_gitignore",
     ".gitmodules": "file_gitignore",
@@ -293,10 +335,15 @@
     ".eslintrc.yml": "file_eslint",
     ".eslintrc.yaml": "file_eslint",
     ".eslintignore": "file_eslint",
-    "go.mod": "file_gomodsum",
-    "go.sum": "file_gomodsum"
+    "go.mod": "file_gomod",
+    "go.sum": "file_gosum",
+    "go.work": "file_gowork",
+    "Directory.Build.props": "file_buildprops"
   },
   "fileExtensions": {
+    "ml": "file_ml",
+    "mli": "file_mli",
+    "opam": "file_opam",
     "css": "file_css",
     "dart": "file_dart",
     "erb": "file_erb",
@@ -373,9 +420,11 @@
     "php": "file_php",
     "cfg": "file_config",
     "conf": "file_config",
+    "config": "file_config",
     "cnf": "file_config",
     "svelte": "file_svelte",
     "slim": "file_slim",
+    "sln": "file_sln",
     "rs": "file_rust",
     "cs": "file_cs",
     "cshtml": "file_cshtml",
